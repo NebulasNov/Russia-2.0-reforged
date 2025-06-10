@@ -10450,3 +10450,13 @@ sov_transfer_baltic_puppet_scw = {
         }
     }
 }
+#Set up national obligation - industrial awakening
+SOV_set_up_industrial_awakening = {
+	set_country_flag = SOV_national_obligation_industrial_awakening_option_3
+	every_state = {
+		limit = {
+			is_owned_by = SOV
+		}
+		set_variable = { civ_factory_no_level = industrial_complex_level }
+	}
+}
