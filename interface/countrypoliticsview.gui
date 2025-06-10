@@ -1,4 +1,4 @@
-guiTypes = {
+guiTypes = { #lol jabari was here
 
 	containerWindowType = {
 		name = "countrypoliticsview"
