@@ -106,6 +106,87 @@ on_actions = {
                     set_variable = { tsar_bomba_nuke_count = 0 }
                 }
             }
+
+            #Checks for industrial awakening
+			if = {
+				limit = {
+					SOV = { has_country_flag = SOV_national_obligation_industrial_awakening_option_3 }
+					any_owned_state = {
+						check_variable = { civ_factory_no_level < industrial_complex_level }
+					}
+				}
+				every_owned_state = {
+					limit = {
+						AND = {
+							check_variable = { civ_factory_no_level < industrial_complex_level }
+							is_coastal = yes
+						}
+					}
+					random_list = {
+						25 = {
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+						}
+						25 = {
+							add_building_construction = {
+								type = dockyard
+								level = 1
+								instant_build = yes
+							}
+						}
+						25 = {
+							add_building_construction = {
+								type = synthetic_refinery
+								level = 1
+								instant_build = yes
+							}
+						}
+						25 = {
+							add_building_construction = {
+								type = fuel_silo
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					civ_factory_no_level = industrial_complex_level
+				}
+				every_owned_state = {
+					limit = {
+						AND = {
+							check_variable = { civ_factory_no_level < industrial_complex_level }
+							is_coastal = no
+						}
+					}
+					random_list = {
+						50 = {
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+						}
+						25 = {
+							add_building_construction = {
+								type = synthetic_refinery
+								level = 1
+								instant_build = yes
+							}
+						}
+						25 = {
+							add_building_construction = {
+								type = fuel_silo
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					civ_factory_no_level = industrial_complex_level
+				}
+			}
         }
     }
 }
