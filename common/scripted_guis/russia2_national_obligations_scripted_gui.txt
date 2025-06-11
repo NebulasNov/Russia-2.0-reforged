@@ -506,6 +506,295 @@ scripted_gui = {
             sov_national_obligations_industrial_awakening_confirm_button_click = {
                 THIS = {
                     #TODO
+					if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_industrial_awakening_selected_index = 1
+                            }
+                        }
+                        add_ideas = SOV_industrially_awakened
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_industrial_awakening_selected_index = 2
+                            }
+                        }
+						set_victory_points = { province = 3529 value = 100 }
+						set_victory_points = { province = 9417 value = 100 }
+						set_victory_points = { province = 3686 value = 100 }
+						set_victory_points = { province = 11370 value = 100 }
+						set_victory_points = { province = 6380 value = 100 }
+						set_victory_points = { province = 3151 value = 100 }
+						set_victory_points = { province = 306 value = 100 }
+						set_victory_points = { province = 957 value = 100 }
+						217 = {
+							set_state_category = megalopolis
+							add_building_construction = {
+								type = infrastructure
+								level = 5
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = industrial_complex
+								level = 3
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 3
+								instant_build = yes
+							}
+						}
+						137 = {
+							set_state_category = megalopolis
+							add_building_construction = {
+								type = infrastructure
+								level = 5
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = industrial_complex
+								level = 3
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = dockyard
+								level = 3
+								instant_build = yes
+							}
+						}
+						218 = {
+							set_state_category = megalopolis
+							add_building_construction = {
+								type = infrastructure
+								level = 5
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = industrial_complex
+								level = 3
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 3
+								instant_build = yes
+							}
+						}
+						202 = {
+							set_state_category = megalopolis
+							add_building_construction = {
+								type = infrastructure
+								level = 5
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = industrial_complex
+								level = 3
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 3
+								instant_build = yes
+							}
+						}
+						206 = {
+							set_state_category = megalopolis
+							add_building_construction = {
+								type = infrastructure
+								level = 5
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = industrial_complex
+								level = 3
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 3
+								instant_build = yes
+							}
+						}
+						242 = {
+							set_state_category = megalopolis
+							add_building_construction = {
+								type = infrastructure
+								level = 5
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = industrial_complex
+								level = 3
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 3
+								instant_build = yes
+							}
+						}
+						219 = {
+							set_state_category = megalopolis
+							add_building_construction = {
+								type = infrastructure
+								level = 5
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = industrial_complex
+								level = 3
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 3
+								instant_build = yes
+							}
+						}
+						195 = {
+							set_state_category = megalopolis
+							add_building_construction = {
+								type = infrastructure
+								level = 5
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = industrial_complex
+								level = 3
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 3
+								instant_build = yes
+							}
+						}
+						408 = {
+							set_state_category = megalopolis
+							add_building_construction = {
+								type = infrastructure
+								level = 5
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = industrial_complex
+								level = 3
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = dockyard
+								level = 3
+								instant_build = yes
+							}
+						}
+							ROOT = {
+								build_railway = {
+								level = 5
+								build_only_on_allied = yes
+								controller_priority = {
+								base = 1
+								}
+								fallback = yes
+								start_state  = 219
+								target_state = 217
+								}
+							}
+							ROOT = {
+								build_railway = {
+								level = 5
+								build_only_on_allied = yes
+								controller_priority = {
+								base = 1
+								}
+								fallback = yes
+								start_state  = 219
+								target_state = 137
+								}
+							}
+							ROOT = {
+								build_railway = {
+								level = 5
+								build_only_on_allied = yes
+								controller_priority = {
+								base = 1
+								}
+								fallback = yes
+								start_state  = 219
+								target_state = 218
+								}
+							}
+							ROOT = {
+								build_railway = {
+								level = 5
+								build_only_on_allied = yes
+								controller_priority = {
+								base = 1
+								}
+								fallback = yes
+								start_state  = 219
+								target_state = 202
+								}
+							}
+							ROOT = {
+								build_railway = {
+								level = 5
+								build_only_on_allied = yes
+								controller_priority = {
+								base = 1
+								}
+								fallback = yes
+								start_state  = 219
+								target_state = 206
+								}
+							}
+							ROOT = {
+								build_railway = {
+								level = 5
+								build_only_on_allied = yes
+								controller_priority = {
+								base = 1
+								}
+								fallback = yes
+								start_state  = 219
+								target_state = 242
+								}
+							}
+							ROOT = {
+								build_railway = {
+								level = 5
+								build_only_on_allied = yes
+								controller_priority = {
+								base = 1
+								}
+								fallback = yes
+								start_state  = 219
+								target_state = 195
+								}
+							}
+							ROOT = {
+								build_railway = {
+								level = 5
+								build_only_on_allied = yes
+								controller_priority = {
+								base = 1
+								}
+								fallback = yes
+								start_state  = 219
+								target_state = 408
+								}
+							}
+                    }
+					else_if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_industrial_awakening_selected_index = 3
+                            }
+                        }
+                        add_ideas = SOV_national_obligations_test_option_3
+                    }
                     set_country_flag = industrial_awakening_confirmed
                     if = {
                         limit = {
@@ -603,6 +892,22 @@ scripted_gui = {
                             sov_national_obligations_industrial_awakening_selected_index = 3
                         }
                     }
+					if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_industrial_awakening_selected_index = 2
+                            }
+                        }
+                         has_full_control_of_state = 217
+						has_full_control_of_state = 137
+						has_full_control_of_state = 206
+						has_full_control_of_state = 218
+						has_full_control_of_state = 202
+						has_full_control_of_state = 242
+						has_full_control_of_state = 219
+						has_full_control_of_state = 195
+						has_full_control_of_state = 408
+                    }
                     NOT = {
                         has_country_flag = industrial_awakening_confirmed
                     }
@@ -632,7 +937,15 @@ scripted_gui = {
 
             sov_national_obligations_industrial_awakening_second_option_button_click_enabled = {
                 THIS = {
-                    #TODO
+                    has_full_control_of_state = 217
+					has_full_control_of_state = 137
+					has_full_control_of_state = 206
+					has_full_control_of_state = 218
+					has_full_control_of_state = 202
+					has_full_control_of_state = 242
+					has_full_control_of_state = 219
+					has_full_control_of_state = 195
+					has_full_control_of_state = 408
                     NOT = {
                         has_country_flag = industrial_awakening_confirmed
                     }
@@ -647,7 +960,6 @@ scripted_gui = {
 
             sov_national_obligations_industrial_awakening_third_option_button_click_enabled = {
                 THIS = {
-                    #TODO
                     NOT = {
                         has_country_flag = industrial_awakening_confirmed
                     }
@@ -870,7 +1182,22 @@ scripted_gui = {
         effects = {
             sov_national_obligations_unfailing_army_confirm_button_click = {
                 THIS = {
-                    #TODO
+                    if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_unfailing_army_selected_index = 1
+                            }
+                        }
+                        add_ideas = SOV_unfailing_army_offense
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_unfailing_army_selected_index = 2
+                            }
+                        }
+						add_ideas = SOV_unfailing_army_defense
+                    }
                     set_country_flag = unfailing_army_confirmed
                     if = {
                         limit = {
