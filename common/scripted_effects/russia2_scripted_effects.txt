@@ -10460,3 +10460,19 @@ SOV_set_up_industrial_awakening = {
 		set_variable = { civ_factory_no_level = industrial_complex_level }
 	}
 }
+#Set up national obligation - grand fleet
+SOV_set_up_grand_fleet = {
+	set_country_flag = SOV_national_obligation_grand_fleet_option_2
+	set_variable = {
+		sov_amount_of_carriers = num_ships_with_type@carrier
+	}
+	set_variable = {
+		sov_amount_of_battleship = num_ships_with_type@battleship
+	}
+	set_variable = {
+		sov_amount_of_battlecruiser = num_ships_with_type@battle_cruiser
+	}
+	set_variable = {
+		sov_amount_of_heavycruiser = num_ships_with_type@heavy_cruiser
+	}
+}
