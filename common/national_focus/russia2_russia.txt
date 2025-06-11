@@ -5152,7 +5152,6 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			always = no
 			is_subject = no
 			is_major = yes
 			has_global_flag = sov_national_obligations_allowed
@@ -5273,7 +5272,6 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			always = no
 			is_subject = no
 			is_major = yes
 			has_global_flag = sov_national_obligations_allowed
@@ -6029,7 +6027,6 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			always = no
 			is_subject = no
 			is_major = yes
 			has_global_flag = sov_national_obligations_allowed
@@ -7145,7 +7142,6 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			always = no
 			is_subject = no
 			is_major = yes
 			has_global_flag = sov_national_obligations_allowed
@@ -9435,7 +9431,6 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = communism
 			is_major = yes
@@ -11013,7 +11008,6 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = communism
 			is_major = yes
@@ -13939,7 +13933,6 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = democratic
 			is_major = yes
@@ -15149,7 +15142,6 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = democratic
 			is_major = yes
@@ -15898,7 +15890,6 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = democratic
 			is_major = yes
@@ -18878,7 +18869,6 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = neutrality
 			is_major = yes
@@ -19792,7 +19782,6 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = neutrality
 			is_major = yes
@@ -22077,7 +22066,6 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = fascism
 			is_major = yes
@@ -24478,7 +24466,6 @@ focus_tree = {
 			factor = 7
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 			has_country_flag = chaos_has_triumphed
@@ -24543,7 +24530,6 @@ focus_tree = {
 			factor = 7
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 		}
@@ -24586,7 +24572,6 @@ focus_tree = {
 			factor = 7
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 		}
@@ -24625,7 +24610,6 @@ focus_tree = {
 			factor = 7
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 		}
@@ -24651,7 +24635,6 @@ focus_tree = {
 			factor = 7
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 			NOT = {
@@ -24721,7 +24704,6 @@ focus_tree = {
 			factor = 7
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 			has_country_flag = has_chosen_reform_russia_anarchist
@@ -24799,7 +24781,6 @@ focus_tree = {
 			factor = 7
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 		}
@@ -24880,7 +24861,6 @@ focus_tree = {
 			factor = 7
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 			NOT = {
@@ -24941,7 +24921,6 @@ focus_tree = {
 			factor = 7
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 			has_country_flag = has_chosen_a_tight_grip_anarchist
@@ -25000,7 +24979,6 @@ focus_tree = {
 			factor = 7
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 		}
@@ -25044,7 +25022,6 @@ focus_tree = {
 			factor = 7
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 			custom_trigger_tooltip = {
@@ -25112,7 +25089,6 @@ focus_tree = {
 			factor = 7
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 			has_country_flag = has_chosen_semi_devolution_anarchist
@@ -25136,7 +25112,6 @@ focus_tree = {
 			factor = 7
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 		}
@@ -25159,7 +25134,6 @@ focus_tree = {
 			factor = 7
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 			custom_trigger_tooltip = {
@@ -25347,7 +25321,6 @@ focus_tree = {
 			factor = 7
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 			has_country_flag = sov_finished_anarchy_reform_chaos
@@ -25370,7 +25343,6 @@ focus_tree = {
 			factor = 7
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 		}
@@ -25394,7 +25366,6 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			always = no
 			is_subject = no
 			has_government = anarchy
 			is_major = yes
@@ -25433,3 +25404,4 @@ focus_tree = {
 		}
 	}
 }
+
