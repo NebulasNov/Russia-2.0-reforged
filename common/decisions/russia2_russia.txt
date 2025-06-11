@@ -34387,21 +34387,20 @@ SOV_chaos_all_over_russia = {
 		}
 
 		complete_effect = {
-			#if = { #TODO Change back to normal when the second path is finished
-			#	limit = {
-			#		check_variable = {
-			#			var = chaos_triumphed_over_order
-			#			value = 2
-			#			compare = greater_than_or_equals
-			#		}
-			#		has_country_flag = black_revolution_turned_civil_war
-			#	}
-			#	country_event = { id = russia2_russia.443 }
-			#}
-			#else ={
-			#	country_event = { id = russia2_russia.442 }
-			#}
-			country_event = { id = russia2_russia.442 }
+			if = { #TODO Change back to normal when the second path is finished
+				limit = {
+					check_variable = {
+						var = chaos_triumphed_over_order
+						value = 2
+						compare = greater_than_or_equals
+					}
+					has_country_flag = black_revolution_turned_civil_war
+				}
+				country_event = { id = russia2_russia.443 }
+			}
+			else ={
+				country_event = { id = russia2_russia.442 }
+			}
 		}
 
 		ai_will_do = {
@@ -60286,3 +60285,4 @@ SOV_anarchist_the_peoples_commune_formation = {
 		}
 	}
 }
+
