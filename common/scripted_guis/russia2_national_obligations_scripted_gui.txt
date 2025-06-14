@@ -1180,7 +1180,7 @@ scripted_gui = {
         }
 
         effects = {
-            sov_national_obligations_unfailing_army_confirm_button_click = {
+           sov_national_obligations_unfailing_army_confirm_button_click = {
                 THIS = {
                     if = {
                         limit = {
@@ -1188,15 +1188,56 @@ scripted_gui = {
                                 sov_national_obligations_unfailing_army_selected_index = 1
                             }
                         }
-                        add_ideas = SOV_unfailing_army_offense
-                    }
+                        set_country_flag = unfailing_army_offense_flag
+						set_variable = { var = uao_offence value = 0.0 }
+						set_variable = { var = uao_land_night_attack value = 0 }
+						set_variable = { var = uao_attack_factor value = 0 }
+						set_variable = { var = uao_core_attack_factor value = 0 }
+						set_variable = { var = uao_speed_factor value = 0 }
+						set_variable = { var = uao_army_org value = 0 }
+						set_variable = { var = uao_armor_attack value = 0 }
+						set_variable = { var = uao_org_loss_moving value = 0 }
+						set_variable = { var = uao_breakthrough value = 0 }
+						set_variable = { var = uao_fort_damage value = 0 }
+						set_variable = { var = uao_supply_consumption value = 0 }
+						set_variable = { var = uao_winter_attrition value = 0 }
+						set_variable = { var = uao_heat_attrition value = 0 }
+						set_variable = { var = uao_river_crossing value = 0 }
+						set_variable = { var = uao_terrain value = 0 }		
+						SOV = {
+							set_variable = { zcurrent_state_number = num_controlled_states }
+						}
+					}
                     else_if = {
                         limit = {
                             check_variable = {
                                 sov_national_obligations_unfailing_army_selected_index = 2
                             }
                         }
-						add_ideas = SOV_unfailing_army_defense
+						set_country_flag = unfailing_army_defense_flag
+						set_variable = { var = uad_defence value = 0 }
+						set_variable = { var = uad_defence_factor value = 0 }
+						set_variable = { var = uad_core_defence value = 0 }
+						set_variable = { var = uad_org_regain value = 0 }
+						set_variable = { var = uad_recovery value = 0 }
+						set_variable = { var = uad_entrench_speed value = 0 }
+						set_variable = { var = uad_entrench_factor value = 0 }
+						set_variable = { var = uad_recon value = 0 }
+						set_variable = { var = uad_entrenched_recon value = 0 }
+						set_variable = { var = uad_out_of_supply value = 0 }
+						set_variable = { var = uad_supply_grace value = 0 }
+						set_variable = { var = uad_pocket_penalty value = 0 }
+						set_variable = { var = uad_fort_damage value = 0 }
+						set_variable = { var = uad_reinforce value = 0 }
+						set_variable = { var = uad_speed value = 0 }
+						set_variable = { var = uad_org value = 0 }
+						set_variable = { var = uad_supply_consumption value = 0 }
+						set_variable = { var = uad_winter_attrition value = 0 }
+						set_variable = { var = uad_heat_attrition value = 0 }
+						set_variable = { var = uad_terrain value = 0 }
+						SOV = {
+							set_variable = { zcurrent_state_number = num_controlled_states }
+						}
                     }
                     set_country_flag = unfailing_army_confirmed
                     if = {
@@ -1218,7 +1259,8 @@ scripted_gui = {
                         clr_country_flag = sov_open_national_obligations
                     }
                 }
-            }
+	}
+            
 
             sov_national_obligations_unfailing_army_first_option_button_click = {
                 THIS = {
