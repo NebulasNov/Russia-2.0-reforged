@@ -6021,7 +6021,7 @@ focus_tree = {
 		x = 49
 		y = 11
 		prerequisite = { focus = SOV_mass_production }
-		icon = GFX_goal_unknown_golden
+		icon = GFX_focus_SOV_goal_unfailing_army
 		cost = 6
 		ai_will_do = {
 			factor = 10
