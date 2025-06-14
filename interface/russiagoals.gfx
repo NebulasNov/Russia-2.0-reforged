@@ -1189,4 +1189,8 @@ spriteTypes = {
 		name = "GFX_focus_SOV_a_tight_grip"
 		texturefile = "gfx/interface/goals/focus_SOV_a_tight_grip.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_SOV_goal_unfailing_army"
+		texturefile = "gfx/interface/goals/focus_SOV_goal_unfailing_army.dds"
+	}
 }
