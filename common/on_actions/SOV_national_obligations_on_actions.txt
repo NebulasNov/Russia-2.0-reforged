@@ -196,56 +196,59 @@ on_actions = {
 					limit = {
 						check_variable = { sov_amount_of_carriers < num_ships_with_type@carrier }
 					}
-					ship = { name = "Russian Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Light Cruiser" definition = light_cruiser equipment = { ship_hull_light_2 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Light Cruiser" definition = light_cruiser equipment = { ship_hull_light_2 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Light Cruiser" definition = light_cruiser equipment = { ship_hull_light_2 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Light Cruiser" definition = light_cruiser equipment = { ship_hull_light_2 = { amount = 1 owner = SOV creator = SOV } } }
-					set_variable = { sov_amount_of_carriers = num_ships_with_type@carrier }
+					SOV = { load_oob = "SOV_national_obligation_grand_fleet_cv" }
+					set_variable = {
+						var = sov_amount_of_carriers 
+						value = num_ships_with_type@carrier
+					}
 				}
 				if = {
 					limit = {
 						check_variable = { sov_amount_of_battleships < num_ships_with_type@battleship }
 					}
-					ship = { name = "Russian Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Light Cruiser" definition = light_cruiser equipment = { ship_hull_light_2 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Light Cruiser" definition = light_cruiser equipment = { ship_hull_light_2 = { amount = 1 owner = SOV creator = SOV } } }
-					set_variable = { sov_amount_of_battleships = num_ships_with_type@battleship }
+					SOV = { load_oob = "SOV_national_obligation_grand_fleet_bb" }
+					set_variable = {
+						var = sov_amount_of_battleship 
+						value = num_ships_with_type@battleship
+					}
 				}
 				if = {
 					limit = {
 						check_variable = { sov_amount_of_battlecruiser < num_ships_with_type@battle_cruiser }
 					}
-					ship = { name = "Russian Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Light Cruiser" definition = light_cruiser equipment = { ship_hull_light_2 = { amount = 1 owner = SOV creator = SOV } } }
-					set_variable = { sov_amount_of_battlecruiser = num_ships_with_type@battle_cruiser }
+					SOV = { load_oob = "SOV_national_obligation_grand_fleet_bb" }
+					set_variable = {
+						var = sov_amount_of_battlecruiser 
+						value = num_ships_with_type@battle_cruiser
+					}
 				}
 				if = {
 					limit = {
 						check_variable = { sov_amount_of_heavycruiser < num_ships_with_type@heavy_cruiser }
 					}
-					ship = { name = "Russian Submarine" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Submarine" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV creator = SOV } } }
-					ship = { name = "Russian Submarine" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV creator = SOV } } }
-					set_variable = { sov_amount_of_heavycruiser = num_ships_with_type@heavy_cruiser }
+					SOV = { load_oob = "SOV_national_obligation_grand_fleet_ca" }
+					set_variable = {
+						var = sov_amount_of_heavycruiser 
+						value = num_ships_with_type@heavy_cruiser
+					}
 				}
-				#Sets because if you lose ships the game needs to know
-				set_variable = { sov_amount_of_heavycruiser = num_ships_with_type@heavy_cruiser }
-				set_variable = { sov_amount_of_battlecruiser = num_ships_with_type@battle_cruiser }
-				set_variable = { sov_amount_of_battleships = num_ships_with_type@battleship }
-				set_variable = { sov_amount_of_carriers = num_ships_with_type@carrier }
+				Sets because if you lose ships the game needs to know
+				set_variable = {
+					var = sov_amount_of_carriers 
+					value = num_ships_with_type@carrier
+				}
+				set_variable = {
+					var = sov_amount_of_battleship 
+					value = num_ships_with_type@battleship
+				}
+				set_variable = {
+					var = sov_amount_of_battlecruiser 
+					value = num_ships_with_type@battle_cruiser
+				}
+				set_variable = {
+					var = sov_amount_of_heavycruiser 
+					value = num_ships_with_type@heavy_cruiser
+				}
 			}
         }
     }
