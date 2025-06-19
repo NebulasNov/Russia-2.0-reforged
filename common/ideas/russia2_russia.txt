@@ -2097,6 +2097,34 @@ ideas = {
 			}
 		}
 
+		SOV_permanent_revolution = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			picture = dancing_revolution
+
+			modifier = {
+				drift_defence_factor = 0.5
+				compliance_gain = 1
+				resistance_target = -0.25
+				special_forces_cap = 0.08
+				attrition = -0.5
+				democratic_acceptance = -100
+				fascism_acceptance = -100
+				neutrality_acceptance = -100
+				army_org_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.20
+				industrial_capacity_dockyard = 0.15
+				army_speed_factor = 0.10
+				
+			}
+		}
+
 		SOV_New_officers_attack = {
 			removal_cost = -1
 
