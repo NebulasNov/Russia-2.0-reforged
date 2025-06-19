@@ -60286,3 +60286,54 @@ SOV_anarchist_the_peoples_commune_formation = {
 	}
 }
 
+SOV_coalition_for_communism = {
+	SOV_call_upon_the_workers_to_fight_against = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+				has_country_flag = neverending_story_communist_coalition
+		}
+		visible = {
+			has_government = communism
+			is_subject = no
+			has_country_flag = neverending_story_communist_coalition
+			FROM = {
+				exists = yes
+			}
+		}
+		target_trigger = {
+			FROM = {
+				exists = yes
+				is_major = yes
+				NOT = {
+					has_government = communism
+				}
+				has_war_with = SOV
+			}
+		}
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			FROM = {
+				#set_country_flag = SOV_forming_coalition
+				days = 10
+				save_global_event_target_as = SOV_forming_coalition
+			}
+			every_other_country = {
+				limit = {
+					has_government = communism
+					is_subject = no
+					NOT = {
+						is_in_faction_with = SOV
+					}
+				}
+				country_event = { id = russia2_russia.661 days = 3 }	
+				}
+		}
+	}
+}
+
