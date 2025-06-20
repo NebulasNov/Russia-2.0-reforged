@@ -34729,3 +34729,167 @@ country_event = {
 		add_political_power = -50
 	}
 }
+
+#Join the Soviets in their fight
+country_event = {
+	id = russia2_russia.661
+	title = russia2_russia.661.t
+	desc = russia2_russia.661.d
+	picture = GFX_report_event_ANZAC_day
+
+	is_triggered_only = yes
+
+	option = { #For the revolution
+		name = russia2_russia.661.a
+		ai_chance = {
+			factor = 70
+		}
+			ROOT = {
+				declare_war_on = {
+					target = event_target:SOV_forming_coalition
+					type = annex_everything
+				}
+			}
+	}
+	option = { #We'll stay out of this
+		name = russia2_russia.661.b
+		ai_chance = {
+			factor = 30
+		}
+		
+	}
+}
+
+country_event = {
+	id = russia2_russia.668
+	title = russia2_russia.668.t
+	desc = russia2_russia.668.d
+	picture = GFX_report_event_lithuania_army
+	is_triggered_only = yes
+
+	option = { 
+		name = russia2_russia.668.a
+		ai_chance = {
+			factor = 100
+		}
+		every_other_country = {
+			limit = {
+				exists = yes
+				capital_scope = {
+					OR = {
+						is_on_continent = north_america
+						is_on_continent = south_america
+						is_on_continent = africa
+						is_on_continent = asia
+						is_on_continent = australia
+						is_on_continent = middle_east
+						is_on_continent = europe
+					}
+				}
+			}
+			SOV = {
+				declare_war_on = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = russia2_russia.669
+	title = russia2_russia.669.t
+	desc = russia2_russia.669.d
+	picture = GFX_report_event_generic_communist_congress
+
+	is_triggered_only = yes
+
+	option = { 
+		name = russia2_russia.669.a
+		ai_chance = {
+			factor = 100
+		}
+		every_other_country = {
+			limit = {
+				exists = yes
+				has_government = communism
+			}
+		SOV = {
+			annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+		}
+		}
+		every_state = {
+		limit = {
+			is_owned_by = SOV
+			}
+				SOV = { add_state_core = PREV }
+			}
+	}
+}
+
+country_event = {
+	id = russia2_russia.670
+	title = russia2_russia.670.t
+	desc = russia2_russia.670.d
+	picture = GFX_report_event_FIN_paasikivi_president
+
+	is_triggered_only = yes
+
+	option = { 
+		name = russia2_russia.670.a
+		ai_chance = {
+			factor = 100
+		}
+		every_other_country = {
+			limit = {
+				exists = yes
+				capital_scope = {
+						is_on_continent = europe
+				}
+				NOT = {
+				is_subject_of = SOV
+				}
+			}
+			country_event = { id = russia2_russia.671 days = 2 }
+		}
+	}
+}
+
+country_event = {
+	id = russia2_russia.671
+	title = russia2_russia.671.t
+	desc = russia2_russia.671.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = { 
+		name = russia2_russia.671.a
+		ai_chance = {
+			factor = 70
+		}
+		SOV = {
+			set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_russian_influence
+			}
+		}
+	}
+	
+	option = { 
+		name = russia2_russia.671.b
+		ai_chance = {
+			factor = 30
+		}
+		SOV = {
+		create_wargoal = {
+			type = annex_everything
+			target = ROOT
+		}
+		}
+	}
+}
