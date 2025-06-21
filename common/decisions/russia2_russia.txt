@@ -60337,3 +60337,53 @@ SOV_coalition_for_communism = {
 	}
 }
 
+SOV_proletarian_union_invitations = {
+	invite_FROM_to_the_proletarian_union = {
+		icon = generic_civil_support
+	
+		allowed = {
+			original_tag = SOV
+		}
+		
+		available = {
+			FROM = {
+				NOT = {
+					has_country_flag = refused_to_join_proletarian_union
+				}
+			}
+		}
+
+		cost = 100
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_government = communism
+					is_subject_of = SOV
+				}
+			}
+		}
+		visible = {
+			FROM = {
+				NOT = {
+					has_country_flag = refused_to_join_proletarian_union
+				}
+			}
+		}
+		
+		complete_effect = {
+			FROM = { 
+				country_event = {
+					id = russia2_russia.666	
+					hours = 12
+				}
+			}
+		}
+	}
+}
