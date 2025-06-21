@@ -1098,4 +1098,8 @@ spriteTypes = {
 		name = "GFX_idea_SOV_unfailing_army_defense"
 		texturefile = "gfx/leaders/SOV/idea_SOV_unfailing_army_defense.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SOV_proletarian_union_leader"
+		texturefile = "gfx/interface/ideas/idea_SOV_proletarian_union_leader.dds"
+	}
 }
