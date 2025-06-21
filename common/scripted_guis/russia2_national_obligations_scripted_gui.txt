@@ -1623,6 +1623,57 @@ scripted_gui = {
         effects = {
             sov_national_obligations_proletarian_union_confirm_button_click = {
                 THIS = {
+					if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_proletarian_union_selected_index = 1
+                            }
+                        }
+						set_cosmetic_tag = SOV_proletarian_union
+						every_other_country = {
+							limit = {
+								is_subject_of = SOV
+							}
+							country_event = russia2_russia.662
+						}
+						hidden_effect = {
+							country_event = { id = russia2_russia.6650 hours = 36 }
+						}
+					}
+					if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_proletarian_union_selected_index = 2
+                            }
+                        }
+						set_cosmetic_tag = SOV_proletarian_union
+						set_country_flag = SOV_proletarian_union_option_2
+						set_variable = { var = number_of_proletarian_members value = 1 }
+						unlock_decision_category_tooltip = SOV_invite_to_proletarian_union
+					}
+					if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_proletarian_union_selected_index = 3
+                            }
+                        }
+						every_other_country = {
+							limit = {
+								OR = {
+									has_government = communism
+									is_subject_of = SOV
+								}
+							}
+							country_event = {
+								id = russia2_russia.668
+								hours = 12
+							}
+						}
+						create_faction = proletarian_union_faction
+						set_cosmetic_tag = SOV_proletarian_union
+						add_ideas = SOV_proletarian_union_leader
+						set_country_flag = SOV_proletarian_union_option_3
+					}
                     set_country_flag = proletarian_union_confirmed
                     if = {
                         limit = {
