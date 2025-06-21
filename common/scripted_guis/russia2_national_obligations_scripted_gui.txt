@@ -1665,7 +1665,7 @@ scripted_gui = {
 								}
 							}
 							country_event = {
-								id = russia2_russia.668
+								id = russia2_russia.672
 								hours = 12
 							}
 						}
