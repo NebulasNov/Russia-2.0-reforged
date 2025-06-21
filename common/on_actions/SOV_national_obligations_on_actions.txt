@@ -250,6 +250,81 @@ on_actions = {
 					value = num_ships_with_type@heavy_cruiser
 				}
 			}
+		if = {
+				limit = {
+					SOV = { has_country_flag = SOV_proletarian_union_option_3 }
+				}
+				if = {
+					limit = {
+						any_other_country = {
+							AND = {
+								is_in_faction_with = SOV
+								has_offensive_war = yes
+							}
+						}
+					}
+					SOV = { add_ideas = SOV_proletarian_union_offense }
+					every_other_country = {
+						limit = {
+							is_in_faction_with = SOV
+						}
+						add_ideas = SOV_proletarian_union_offense
+					}
+				}
+				if = {
+					limit = {
+						any_other_country = {
+							AND = {
+								is_in_faction_with = SOV
+								has_defensive_war = yes
+							}
+						}
+					}
+					SOV = { add_ideas = SOV_proletarian_union_defense }
+					every_other_country = {
+						limit = {
+							is_in_faction_with = SOV
+						}
+						add_ideas = SOV_proletarian_union_defense
+					}
+				}
+				if = {
+					limit = {
+						any_other_country = {
+							AND = {
+								is_in_faction_with = SOV
+								has_offensive_war = no
+								has_idea = SOV_proletarian_union_offense
+							}
+						}
+					}
+					SOV = { remove_ideas = SOV_proletarian_union_offense }
+					every_other_country = {
+						limit = {
+							is_in_faction_with = SOV
+						}
+						remove_ideas = SOV_proletarian_union_offense
+					}
+				}
+				if = {
+					limit = {
+						any_other_country = {
+							AND = {
+								is_in_faction_with = SOV
+								has_defensive_war = no
+								has_idea = SOV_proletarian_union_defense
+							}
+						}
+					}
+					SOV = { remove_ideas = SOV_proletarian_union_defense }
+					every_other_country = {
+						limit = {
+							is_in_faction_with = SOV
+						}
+						remove_ideas = SOV_proletarian_union_defense
+					}
+				}
+			}
         }
     }
 
