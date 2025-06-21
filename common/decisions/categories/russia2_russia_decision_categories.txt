@@ -2413,3 +2413,19 @@ SOV_coalition_for_communism = {
 		has_country_flag = neverending_story_communist_coalition
     }
 }
+
+SOV_proletarian_union_invitations = {
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		AND = {
+			has_country_flag = SOV_proletarian_union_option_2
+			NOT = {
+				check_variable = { number_of_proletarian_members > 10 }
+			}
+		}
+	}
+}
