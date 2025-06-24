@@ -534,5 +534,27 @@ on_daily_SOV = {
 		}
 	}
 
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = SOV
+					}
+					FROM = {
+						AND = {
+							has_war_with = SOV
+							communism > 0.25
+							NOT = { has_government = communism }
+							NOT = { has_country_flag = sov_never_ending_story_revolution_success }
+						}
+					}
+					SOV = { has_country_flag = sov_never_ending_story_option_3 }
+				}
+				FROM = { country_event = russia2_russia.675 }
+			}
+		}
+		
+	}
 
 }
