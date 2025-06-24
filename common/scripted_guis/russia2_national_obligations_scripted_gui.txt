@@ -1885,7 +1885,7 @@ scripted_gui = {
                                 sov_national_obligations_neverending_story_selected_index = 3
                             }
                         }
-                        
+                         set_country_flag = sov_never_ending_story_option_3
                     }
                     set_country_flag = neverending_story_confirmed
                     if = {
