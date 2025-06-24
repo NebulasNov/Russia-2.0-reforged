@@ -35259,3 +35259,77 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = russia2_russia.675
+	title = russia2_russia.675.t
+	desc = russia2_russia.675.d
+	picture = GFX_report_event_ger_civil_war
+	is_triggered_only = yes
+	immediate = {
+		start_civil_war = {
+			ideology = communism
+			size = 0.25
+		}
+		set_country_flag = sov_never_ending_story_revolution_success
+	}
+	option = {
+		name = russia2_russia.675.a
+		ai_chance = {
+			base = 100
+		}
+		hidden_effect = {
+			every_other_country = {
+				limit = {
+					AND = {
+						original_tag = ROOT
+						has_government = communism
+					}
+				}
+				set_country_flag = sov_never_ending_story_revolution_target
+			}
+		}
+	}
+}
+
+country_event = {
+	id = russia2_russia.676
+	title = russia2_russia.676.t
+	desc = russia2_russia.676.d
+	picture = GFX_report_event_ger_civil_war
+	trigger = {
+		original_tag = SOV
+		any_country = {
+			has_civil_war = no
+			has_country_flag = sov_never_ending_story_revolution_target
+		}
+		NOT = { has_country_flag = SOV_fire_event_cooldown }
+	}
+	
+	immediate = {
+		set_country_flag = { flag = SOV_fire_event_cooldown days = 15 }
+	}
+	
+	option = {
+		name = russia2_russia.676.a
+		every_other_country = {
+			limit = {
+				has_country_flag = sov_never_ending_story_revolution_target
+			}
+			SOV = { puppet = PREV }
+			clr_country_flag = sov_never_ending_story_revolution_target
+		}
+		
+	}
+	
+	option = {
+		name = russia2_russia.676.b
+		every_other_country = {
+			limit = {
+				has_country_flag = sov_never_ending_story_revolution_target
+			}
+			clr_country_flag = sov_never_ending_story_revolution_target
+		}
+		
+	}
+}
