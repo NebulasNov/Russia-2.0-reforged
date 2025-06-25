@@ -9725,6 +9725,28 @@ ideas = {
 				army_org_factor = 0.1
 			}
 		}
+
+	the_continental_system_idea = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			picture = a_new_beginning
+
+			cancel = {
+			}
+
+			modifier = {
+				political_power_factor = 0.10
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				local_resources_factor = 0.15
+			}
+		}
+
 	}
 
 	naval_manufacturer = {
