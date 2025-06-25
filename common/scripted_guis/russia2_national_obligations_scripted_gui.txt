@@ -2078,7 +2078,7 @@ scripted_gui = {
                                 sov_national_obligations_continental_system_selected_index = 2
                             }
                         }
-						
+			set_global_flag = continental_system_creating			
                     }
                     set_country_flag = continental_system_confirmed
                     if = {
