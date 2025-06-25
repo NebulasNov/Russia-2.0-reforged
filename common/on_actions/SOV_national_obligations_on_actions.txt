@@ -557,4 +557,42 @@ on_daily_SOV = {
 		
 	}
 
+#ROOT - country that just went to peace
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = continental_system_creating 
+					ROOT = {
+						original_tag = SOV 
+					}
+					FROM = {
+						capital_scope = {
+							is_on_continent = europe
+						}
+					}
+				}
+				SOV = {
+					add_to_faction = FROM
+				}
+				FROM = {
+						add_ideas = the_continental_system_idea
+				}
+				every_other_country = {
+					limit = {
+						NOT = { 
+							original_tag = SOV
+							capital_scope = {
+								is_on_continent = europe
+							}
+						}
+					}
+					add_opinion_modifier = { target = FROM modifier = not_allowed_trade_foreign }
+					}
+				}
+		}
+
+	}
+
+
 }
