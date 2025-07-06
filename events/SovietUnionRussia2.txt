@@ -35333,3 +35333,145 @@ country_event = {
 		
 	}
 }
+
+#Russia asks for small scale intervention
+country_event = {
+	id = russia2_russia.700
+	title = russia2_russia.700.t
+	desc = russia2_russia.700.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = { #We'll send our support
+		name = russia2_russia.700.a
+		ai_chance = {
+			factor = 70
+		}
+			ROOT = {
+				add_ai_strategy = {
+					type = send_lend_lease_desire
+					id = event_target:SOV_target_intervention_small
+					value = 5000
+				}
+			}
+	}
+	option = { #We'll stay out of this
+		name = russia2_russia.700.b
+		ai_chance = {
+			factor = 30
+		}
+		
+	}
+}
+
+#Russia asks for medium scale intervention
+country_event = {
+	id = russia2_russia.701
+	title = russia2_russia.701.t
+	desc = russia2_russia.701.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = { #We'll send our support
+		name = russia2_russia.700.a
+		ai_chance = {
+			factor = 70
+		}
+			ROOT = {
+				add_ai_strategy = {
+					type = send_lend_lease_desire
+					id = event_target:SOV_target_intervention_medium
+					value = 5000
+				}
+			}
+	}
+	option = { #We'll stay out of this
+		name = russia2_russia.700.b
+		ai_chance = {
+			factor = 30
+		}
+		
+	}
+}
+
+#Russia asks for full scale intervention
+country_event = {
+	id = russia2_russia.702
+	title = russia2_russia.702.t
+	desc = russia2_russia.702.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = { #We'll send our support
+		name = russia2_russia.700.a
+		ai_chance = {
+			factor = 70
+		}
+			ROOT = {
+				declare_war_on = {
+					target = event_target:SOV_target_intervention_full
+					type = topple_government
+				}
+			}
+	}
+	option = { #We'll stay out of this
+		name = russia2_russia.700.b
+		ai_chance = {
+			factor = 30
+		}
+		
+	}
+}
+
+#The Treaty of Moscow
+country_event = {
+	id = russia2_russia.703
+	title = russia2_russia.703.t
+	desc = russia2_russia.703.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = { #The world will know peace
+		name = russia2_russia.703.a
+		ai_chance = {
+			factor = 70
+		}
+			every_other_country = {
+				limit = {
+					has_government = democratic
+				}
+				country_event = { id = russia2_russia.704 days = 1 }	
+				}
+	}
+}
+
+#Sign the Moscow Treaty?
+country_event = {
+	id = russia2_russia.704
+	title = russia2_russia.704.t
+	desc = russia2_russia.704.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = { #Let's sign it
+		name = russia2_russia.704.a
+		ai_chance = {
+			factor = 80
+		}
+			set_country_flag = signitor_treaty_moscow
+			add_ideas = treaty_of_moscow_idea
+	}
+	
+	option = { #No
+		name = russia2_russia.704.b
+		ai_chance = {
+			factor = 20
+		}
+		set_country_flag = non_signitor_treaty_moscow
+	}
+}
