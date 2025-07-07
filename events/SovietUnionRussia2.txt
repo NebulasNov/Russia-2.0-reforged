@@ -35381,7 +35381,7 @@ country_event = {
 		}
 			ROOT = {
 				add_ai_strategy = {
-					type = send_lend_lease_desire
+					type = send_volunteers_desire
 					id = event_target:SOV_target_intervention_medium
 					value = 5000
 				}
