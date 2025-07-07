@@ -545,6 +545,7 @@ scripted_gui = {
 								level = 3
 								instant_build = yes
 							}
+							add_dynamic_modifier = { modifier = SOV_megacity }
 						}
 						137 = {
 							set_state_category = megalopolis
@@ -563,6 +564,7 @@ scripted_gui = {
 								level = 3
 								instant_build = yes
 							}
+							add_dynamic_modifier = { modifier = SOV_megacity }
 						}
 						218 = {
 							set_state_category = megalopolis
@@ -581,6 +583,7 @@ scripted_gui = {
 								level = 3
 								instant_build = yes
 							}
+							add_dynamic_modifier = { modifier = SOV_megacity }
 						}
 						202 = {
 							set_state_category = megalopolis
@@ -599,6 +602,7 @@ scripted_gui = {
 								level = 3
 								instant_build = yes
 							}
+							add_dynamic_modifier = { modifier = SOV_megacity }
 						}
 						206 = {
 							set_state_category = megalopolis
@@ -617,6 +621,7 @@ scripted_gui = {
 								level = 3
 								instant_build = yes
 							}
+							add_dynamic_modifier = { modifier = SOV_megacity }
 						}
 						242 = {
 							set_state_category = megalopolis
@@ -635,6 +640,7 @@ scripted_gui = {
 								level = 3
 								instant_build = yes
 							}
+							add_dynamic_modifier = { modifier = SOV_megacity }
 						}
 						219 = {
 							set_state_category = megalopolis
@@ -653,6 +659,7 @@ scripted_gui = {
 								level = 3
 								instant_build = yes
 							}
+							add_dynamic_modifier = { modifier = SOV_megacity }
 						}
 						195 = {
 							set_state_category = megalopolis
@@ -671,6 +678,7 @@ scripted_gui = {
 								level = 3
 								instant_build = yes
 							}
+							add_dynamic_modifier = { modifier = SOV_megacity }
 						}
 						408 = {
 							set_state_category = megalopolis
@@ -689,6 +697,7 @@ scripted_gui = {
 								level = 3
 								instant_build = yes
 							}
+							add_dynamic_modifier = { modifier = SOV_megacity }
 						}
 							ROOT = {
 								build_railway = {
@@ -2219,7 +2228,24 @@ scripted_gui = {
         effects = {
             sov_national_obligations_treaty_moscow_confirm_button_click = {
                 THIS = {
-                    #TODO
+                    if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_treaty_moscow_selected_index = 1
+                            }
+                        }
+						set_country_flag = treaty_of_moscow_forming_coalition
+						country_event = { id = russia2_russia.703 days = 1 }
+						add_ideas = treaty_of_moscow_idea
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_treaty_moscow_selected_index = 2
+                            }
+                        }
+						add_ideas = treaty_of_moscow_natspi
+                    }
                     set_country_flag = treaty_moscow_confirmed
                     if = {
                         limit = {
