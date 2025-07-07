@@ -325,6 +325,21 @@ on_actions = {
 					}
 				}
 			}
+		if = {
+				limit = {
+					SOV = { has_country_flag = treaty_of_moscow_forming_coalition }	
+				}
+			every_other_country = {
+				limit = {
+					has_government = democratic
+					NOT = {
+						has_country_flag = signitor_treaty_moscow
+						has_country_flag = non_signitor_treaty_moscow
+					}
+				}
+				country_event = { id = russia2_russia.676 days = 1 }
+			}
+			}
         }
     }
 
@@ -589,6 +604,67 @@ on_daily_SOV = {
 					}
 					add_opinion_modifier = { target = FROM modifier = not_allowed_trade_foreign }
 					}
+				}
+				if = {
+				limit = {
+					any_other_country = {
+						has_country_flag = treaty_moscow_getting_lend_lease
+						has_war = no
+					}
+				}
+				PREV = {
+					clr_country_flag = treaty_moscow_getting_lend_lease
+					}
+				}
+				if = {
+				limit = {
+					any_other_country = {
+						has_country_flag = treaty_moscow_getting_volunteers
+						has_war = no
+					}
+				}
+				PREV = {
+					clr_country_flag = treaty_moscow_getting_volunteers
+					}
+				}
+				if = {
+				limit = {
+					any_other_country = {
+						has_country_flag = treaty_moscow_full_invasion
+						has_war = no
+					}
+				}
+				PREV = {
+					clr_country_flag = treaty_moscow_full_invasion
+					}
+				}
+			if = {
+					limit = {
+						any_other_country = {
+							has_country_flag = signitor_treaty_moscow
+						}
+					}
+				PREV = {
+				add_ai_strategy = {
+					type = send_lend_lease_desire
+					id = ROOT
+					value = -5000
+					}
+				}
+				}
+				if = {
+					limit = {
+						any_other_country = {
+							has_country_flag = signitor_treaty_moscow
+						}
+					}
+				PREV = {
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ROOT
+					value = -5000
+					}
+				}
 				}
 		}
 
