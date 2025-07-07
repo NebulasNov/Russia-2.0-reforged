@@ -60387,3 +60387,146 @@ SOV_proletarian_union_invitations = {
 		}
 	}
 }
+
+SOV_interventions_for_democracy = {
+	SOV_treaty_intervention_small = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+				has_country_flag = treaty_of_moscow_forming_coalition
+		}
+		visible = {
+			has_government = democratic
+			is_subject = no
+			has_country_flag = treaty_of_moscow_forming_coalition
+			FROM = {
+				exists = yes
+			}
+		}
+		target_trigger = {
+			FROM = {
+				exists = yes
+				has_war = yes
+				is_subject = no
+				NOT = {
+					has_country_flag = treaty_moscow_getting_lend_lease
+				}
+			}
+		}
+		cost = 150
+		ai_will_do = {
+			factor = 50
+		}
+		complete_effect = {
+			FROM = {
+				set_country_flag = treaty_moscow_getting_lend_lease
+				save_global_event_target_as = SOV_target_intervention_small
+			}
+			every_other_country = {
+				limit = {
+					has_government = democratic
+					has_country_flag = signitor_treaty_moscow
+					NOT = {
+						has_war = yes
+					}
+				}
+				country_event = { id = russia2_russia.700 days = 3 }	
+				}
+		}
+	}
+	SOV_treaty_intervention_medium = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+				has_country_flag = treaty_of_moscow_forming_coalition
+		}
+		visible = {
+			has_government = democratic
+			is_subject = no
+			has_country_flag = treaty_of_moscow_forming_coalition
+			FROM = {
+				exists = yes
+			}
+		}
+		target_trigger = {
+			FROM = {
+				exists = yes
+				has_war = yes
+				is_subject = no
+				NOT = {
+					has_country_flag = treaty_moscow_getting_volunteers
+				}
+			}
+		}
+		cost = 200
+		ai_will_do = {
+			factor = 30
+		}
+		complete_effect = {
+			FROM = {
+				set_country_flag = treaty_moscow_getting_volunteers
+				save_global_event_target_as = SOV_target_intervention_medium
+			}
+			every_other_country = {
+				limit = {
+					has_government = democratic
+					has_country_flag = signitor_treaty_moscow
+					NOT = {
+						has_war = yes
+					}
+				}
+				country_event = { id = russia2_russia.701 days = 3 }	
+				}
+		}
+	}
+	SOV_treaty_intervention_full = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+				has_country_flag = treaty_of_moscow_forming_coalition
+		}
+		visible = {
+			has_government = democratic
+			is_subject = no
+			has_country_flag = treaty_of_moscow_forming_coalition
+			FROM = {
+				exists = yes
+			}
+		}
+		target_trigger = {
+			FROM = {
+				exists = yes
+				has_war = yes
+				is_subject = no
+				NOT = {
+					has_country_flag = treaty_moscow_full_invasion
+				}
+			}
+		}
+		cost = 250
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			FROM = {
+				set_country_flag = treaty_moscow_full_invasion
+				save_global_event_target_as = SOV_target_intervention_full
+			}
+			every_other_country = {
+				limit = {
+					has_government = democratic
+					has_country_flag = signitor_treaty_moscow
+					NOT = {
+						has_war = yes
+					}
+				}
+				country_event = { id = russia2_russia.702 days = 3 }	
+				}
+		}
+	}
+}
+
+
