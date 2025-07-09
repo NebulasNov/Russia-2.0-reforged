@@ -15884,7 +15884,7 @@ focus_tree = {
 		x = 36
 		y = 33
 		prerequisite = { focus = SOV_perpetual_defense_liberty }
-		icon = GFX_goal_unknown_golden
+		icon = GFX_focus_SOV_golden_age
 		cost = 6
 		ai_will_do = {
 			factor = 10
