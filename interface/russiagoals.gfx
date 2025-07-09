@@ -1193,4 +1193,8 @@ spriteTypes = {
 		name = "GFX_focus_SOV_goal_unfailing_army"
 		texturefile = "gfx/interface/goals/focus_SOV_goal_unfailing_army.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_SOV_golden_age"
+		texturefile = "gfx/interface/goals/focus_SOV_golden_age.dds"
+	}
 }
