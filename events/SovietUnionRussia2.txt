@@ -35475,3 +35475,129 @@ country_event = {
 		set_country_flag = non_signitor_treaty_moscow
 	}
 }
+
+#Golden Age of the Army
+country_event = {
+	id = russia2_russia.705
+	title = russia2_russia.705.t
+	desc = russia2_russia.705.d
+	picture = GFX_report_event_sanation_left_victory
+
+	is_triggered_only = yes
+
+	option = { #Cheers
+		name = russia2_russia.705.a
+		ai_chance = {
+			factor = 100
+		}
+			add_timed_idea = { idea = golden_age_army days = 45 }
+	}
+}
+
+#Golden Age of Politics
+country_event = {
+	id = russia2_russia.706
+	title = russia2_russia.706.t
+	desc = russia2_russia.705.d
+	picture = GFX_report_event_sanation_left_victory
+
+	is_triggered_only = yes
+
+	option = { #Cheers
+		name = russia2_russia.705.a
+		ai_chance = {
+			factor = 100
+		}
+			add_timed_idea = { idea = golden_age_politics days = 45 }
+	}
+}
+
+#Golden Age of the Navy
+country_event = {
+	id = russia2_russia.707
+	title = russia2_russia.707.t
+	desc = russia2_russia.705.d
+	picture = GFX_report_event_sanation_left_victory
+
+	is_triggered_only = yes
+
+	option = { #Cheers
+		name = russia2_russia.705.a
+		ai_chance = {
+			factor = 100
+		}
+			add_timed_idea = { idea = golden_age_navy days = 45 }
+	}
+}
+
+#Golden Age of the Airforce
+country_event = {
+	id = russia2_russia.708
+	title = russia2_russia.708.t
+	desc = russia2_russia.705.d
+	picture = GFX_report_event_sanation_left_victory
+
+	is_triggered_only = yes
+
+	option = { #Cheers
+		name = russia2_russia.705.a
+		ai_chance = {
+			factor = 100
+		}
+			add_timed_idea = { idea = golden_age_air days = 45 }
+	}
+}
+
+#Golden Age of Science
+country_event = {
+	id = russia2_russia.709
+	title = russia2_russia.709.t
+	desc = russia2_russia.705.d
+	picture = GFX_report_event_sanation_left_victory
+
+	is_triggered_only = yes
+
+	option = { #Cheers
+		name = russia2_russia.705.a
+		ai_chance = {
+			factor = 100
+		}
+			add_timed_idea = { idea = golden_age_science days = 45 }
+	}
+}
+
+#Golden Age of the Economy
+country_event = {
+	id = russia2_russia.710
+	title = russia2_russia.710.t
+	desc = russia2_russia.705.d
+	picture = GFX_report_event_sanation_left_victory
+
+	is_triggered_only = yes
+
+	option = { #Cheers
+		name = russia2_russia.705.a
+		ai_chance = {
+			factor = 100
+		}
+			add_timed_idea = { idea = golden_age_economy days = 45 }
+	}
+}
+
+#Golden Age of industry
+country_event = {
+	id = russia2_russia.711
+	title = russia2_russia.711.t
+	desc = russia2_russia.705.d
+	picture = GFX_report_event_sanation_left_victory
+
+	is_triggered_only = yes
+
+	option = { #Cheers
+		name = russia2_russia.705.a
+		ai_chance = {
+			factor = 100
+		}
+			add_timed_idea = { idea = golden_age_industry days = 45 }
+	}
+}
