@@ -340,6 +340,37 @@ on_actions = {
 				country_event = { id = russia2_russia.676 days = 1 }
 			}
 			}
+		if = {
+				limit = {
+					has_country_flag = golden_age_random_spirits
+				}
+				random_list = {
+						2 = {
+							country_event = { id = russia2_russia.705 }
+						}
+						2 = {
+							country_event = { id = russia2_russia.706 }
+						}
+						2 = {
+							country_event = { id = russia2_russia.707 }
+						}
+						2 = {
+							country_event = { id = russia2_russia.708 }
+						}
+						2 = {
+							country_event = { id = russia2_russia.709 }
+						}
+						2 = {
+							country_event = { id = russia2_russia.710 }
+						}
+						2 = {
+							country_event = { id = russia2_russia.711 }
+						}
+						86 = {	
+						}
+					}
+			}
+
         }
     }
 
