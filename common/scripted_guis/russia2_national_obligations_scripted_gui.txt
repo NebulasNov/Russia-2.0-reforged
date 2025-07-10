@@ -2385,7 +2385,24 @@ scripted_gui = {
         effects = {
             sov_national_obligations_golden_age_confirm_button_click = {
                 THIS = {
-                    #TODO
+                    if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_golden_age_selected_index = 1
+                            }
+                        }
+						set_country_flag = golden_age_random_spirits
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_golden_age_selected_index = 2
+                            }
+                        }
+						every_owned_state = {
+							ROOT = { add_state_core = PREV }
+						}
+                    }
                     set_country_flag = golden_age_confirmed
                     if = {
                         limit = {
