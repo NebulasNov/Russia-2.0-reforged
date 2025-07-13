@@ -18886,8 +18886,8 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = SOV_coming_soon
 			custom_effect_tooltip = SOV_legacy_must_carry_on_tt
-			add_to_array = { sov_national_obligations_unlocked_indexes = 10 }
-			set_variable = { sov_national_obligations_selected_index = 10 }
+			add_to_array = { sov_national_obligations_unlocked_indexes = 11 }
+			set_variable = { sov_national_obligations_selected_index = 11 }
 			if = {
 				limit = {
 					NOT = {
@@ -19799,8 +19799,8 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = SOV_coming_soon
 			custom_effect_tooltip = SOV_imperial_obligations_focus_tt
-			add_to_array = { sov_national_obligations_unlocked_indexes = 11 }
-			set_variable = { sov_national_obligations_selected_index = 11 }
+			add_to_array = { sov_national_obligations_unlocked_indexes = 10 }
+			set_variable = { sov_national_obligations_selected_index = 10 }
 			if = {
 				limit = {
 					NOT = {
