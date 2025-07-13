@@ -35601,3 +35601,163 @@ country_event = {
 			add_timed_idea = { idea = golden_age_industry days = 45 }
 	}
 }
+
+#The Second Empire
+country_event = {
+	id = russia2_russia.712
+	title = russia2_russia.712.t
+	desc = russia2_russia.712.d
+	picture = GFX_report_event_sanation_left_victory
+
+	is_triggered_only = yes
+
+	option = { #We are also Turks
+		name = russia2_russia.712.a
+		ai_chance = {
+			factor = 25
+		}
+			every_state = {
+				limit = {
+					OR = {
+					is_core_of = TUR
+					is_core_of = SIK
+					is_core_of = AZR
+					is_core_of = KAZ
+					is_core_of = UZB
+					is_core_of = KYR
+					is_core_of = TAJ
+					is_core_of = PER
+					is_core_of = AFG
+					is_core_of = ARM
+					is_core_of = GEO
+					is_core_of = BUL
+					}
+				}
+				SOV = {
+					add_state_core = PREV
+				}
+			}
+				every_other_country = {
+				limit = {
+					exists = yes
+					OR = {
+						original_tag = TUR
+						original_tag = SIK
+						original_tag = AZR
+						original_tag = KAZ
+						original_tag = UZB
+						original_tag = KYR
+						original_tag = TAJ
+						original_tag = PER
+						original_tag = AFG
+						original_tag = ARM
+						original_tag = GEO
+						orginal_tage = BUL
+						}
+					}
+					SOV = {
+						create_wargoal = {
+							type = annex_everything
+							target = PREV
+							}
+						}
+				}
+			}
+	option = { #We are also Aryan
+		name = russia2_russia.712.b
+		ai_chance = {
+			factor = 100
+		}
+			every_state = {
+				limit = {
+					OR = {
+					is_core_of = GER
+					is_core_of = DEN
+					is_core_of = ENG
+					is_core_of = FIN
+					is_core_of = SWE
+					is_core_of = NOR
+					is_core_of = HOL
+					is_core_of = BEL
+					is_core_of = AUS
+					is_core_of = LUX
+					is_core_of = SWI
+					}
+				}
+				SOV = {
+					add_state_core = PREV
+				}
+			}
+				every_other_country = {
+				limit = {
+					exists = yes
+					OR = {
+						original_tag = GER
+						original_tag = DEN
+						original_tag = ENG
+						original_tag = FIN
+						original_tag = SWE
+						original_tag = NOR
+						original_tag = HOL
+						original_tag = BEL
+						original_tag = AUS
+						original_tag = LUX
+						original_tag = SWI
+						}
+					}
+					SOV = {
+						create_wargoal = {
+							type = annex_everything
+							target = PREV
+							}
+						}
+				}
+	}
+	
+	option = { #We are also Mongolian
+		name = russia2_russia.712.c
+		ai_chance = {
+			factor = 100
+		}
+			every_state = {
+				limit = {
+					OR = {
+					is_core_of = TAN
+					is_core_of = MON
+					is_core_of = SIK
+					is_core_of = KAZ
+					is_core_of = KYR
+					is_core_of = XSM
+					is_core_of = MAN
+					is_core_of = MEN
+					is_core_of = KOR
+					}
+				}
+				SOV = {
+					add_state_core = PREV
+				}
+			}
+				every_other_country = {
+				limit = {
+					exists = yes
+					OR = {
+						original_tag = TAN
+						original_tag = MON
+						original_tag = SIK
+						original_tag = KAZ
+						original_tag = KYR
+						original_tag = XSM
+						original_tag = MAN
+						original_tag = MEN
+						original_tag = KOR
+						}
+					}
+					SOV = {
+						create_wargoal = {
+							type = annex_everything
+							target = PREV
+							}
+						}
+				}
+	}
+	}
