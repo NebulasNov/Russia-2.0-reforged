@@ -2724,7 +2724,22 @@ scripted_gui = {
         effects = {
             sov_national_obligations_carry_on_legacy_confirm_button_click = {
                 THIS = {
-                    #TODO
+                   if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_carry_on_legacy_selected_index = 1
+                            }
+                        }
+						add_ideas = carry_on_the_legacy_idea
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_carry_on_legacy_selected_index = 2
+                            }
+                        }
+						country_event = { id = russia2_russia.712 days = 1 }
+                    }
                     set_country_flag = carry_on_legacy_confirmed
                     if = {
                         limit = {
