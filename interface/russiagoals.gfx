@@ -1197,4 +1197,8 @@ spriteTypes = {
 		name = "GFX_focus_SOV_golden_age"
 		texturefile = "gfx/interface/goals/focus_SOV_golden_age.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_SOV_carry_on_the_legacy"
+		texturefile = "gfx/interface/goals/focus_SOV_carry_on_the_legacy.dds"
+	}
 }
