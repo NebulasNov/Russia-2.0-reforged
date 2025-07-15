@@ -18863,7 +18863,7 @@ focus_tree = {
 		x = 62
 		y = 29
 		prerequisite = { focus = SOV_russianize_finland focus = SOV_russianize_the_balkans focus = SOV_preemptive_strike_middle_east }
-		icon = GFX_goal_unknown_golden
+		icon = GFX_focus_SOV_carry_on_the_legacy
 		cost = 6
 		ai_will_do = {
 			factor = 10
