@@ -1395,20 +1395,20 @@ scripted_gui = {
                             }
                         }
                         every_state = {
-				limit = {
-					AND = {
-						is_core_of = SOV
-						is_coastal = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_building_construction = {
+							limit = {
+								AND = {
+									is_core_of = SOV
+									is_coastal = yes
+								}
+							}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = dockyard
+								level = 1
+								instant_build = yes
+							}
+						}
+						add_building_construction = {
 							type = naval_base
 							province = 11670
 							level = 7
@@ -1479,9 +1479,9 @@ scripted_gui = {
 							province = 957
 							level = 2
 							instant_build = yes
-						}	
+						}
                     }
-		     if = {
+					if = {
                         limit = {
                             check_variable = {
                                 sov_national_obligations_grand_fleet_selected_index = 2
@@ -1577,7 +1577,9 @@ scripted_gui = {
 
             sov_national_obligations_grand_fleet_first_option_button_click_enabled = {
                 THIS = {
-                    #TODO
+                    any_owned_state = {
+						is_coastal = yes
+					}
                     NOT = {
                         has_country_flag = grand_fleet_confirmed
                     }
@@ -1592,7 +1594,10 @@ scripted_gui = {
 
             sov_national_obligations_grand_fleet_second_option_button_click_enabled = {
                 THIS = {
-                    #TODO
+                    has_navy_size = {
+						size > 1
+						type = capital_ship
+					}
                     NOT = {
                         has_country_flag = grand_fleet_confirmed
                     }
@@ -2516,7 +2521,7 @@ scripted_gui = {
     }
 
     #Imperial Obligations
-    sov_national_obligations_imperial_obligations_scripted_gui = {
+   sov_national_obligations_imperial_obligations_scripted_gui = {
         window_name = "sov_national_obligations_imperial_obligations_view"
         context_type = player_context
         parent_window_name = "sov_national_obligations_scripted_gui_window"
@@ -2546,7 +2551,299 @@ scripted_gui = {
         effects = {
             sov_national_obligations_imperial_obligations_confirm_button_click = {
                 THIS = {
-                    #TODO
+                    if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_imperial_obligations_selected_index = 1
+                            }
+                        }
+						#The army will salute him as monarch. . . and assist in making him king. . ."
+                        set_country_flag = sov_imperial_obligation_option_1
+						division_template = { 
+							name = "The Tsar Guard"
+							priority = 1
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+								infantry = { x = 1 y = 3 }
+								infantry = { x = 2 y = 0 }
+								infantry = { x = 2 y = 1 }
+								infantry = { x = 2 y = 2 }
+								infantry = { x = 2 y = 3 }
+								infantry = { x = 3 y = 0 }
+								infantry = { x = 3 y = 1 }
+								infantry = { x = 3 y = 2 }
+								infantry = { x = 3 y = 3 }
+								infantry = { x = 4 y = 0 }
+								infantry = { x = 4 y = 1 }
+								infantry = { x = 4 y = 2 }
+								infantry = { x = 4 y = 3 }
+								artillery = { x = 0 y = 4 }
+								artillery = { x = 1 y = 4 }
+								artillery = { x = 2 y = 4 }
+								artillery = { x = 3 y = 4 }
+								artillery = { x = 4 y = 4 }
+							}
+							support = {
+								artillery = { x = 0 y = 0 } 
+								engineer = { x = 0 y = 1 }
+								recon = { x = 0 y = 2 }
+							}
+						}
+						219 = {
+							create_unit = {
+								division = "name = \"Nicholas I\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Nicholas II\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Peter I\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Peter II\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Peter III\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Catherine I\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Catherine II\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Alexander I\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Ivan VI\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Anna\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Paul I\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Elizabeth\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Alexander II\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Alexander III\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Alexandra\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Olga\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Tatiana\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Maria\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Anastasia\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Alexei\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Micheal\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Alexis\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Feodor III\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+							create_unit = {
+								division = "name = \"Ivan V\" division_template = \"The Tsar Guard\" start_experience_factor = 0.9" 
+								owner = SOV
+							}
+						}
+                    }
+					if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_imperial_obligations_selected_index = 2
+                            }
+                        }
+						#An absolute monarchy is one in which the sovereign does as he pleases so long as he pleases the assassins - Ambrose Bierce
+                       add_ideas = will_of_the_tsar
+                    }
+					if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_imperial_obligations_selected_index = 3
+                            }
+                        }
+						#As long as there is imperialism in the world, a permanent peace is impossible - Hassan Nasrallah
+                        create_faction = imperial_council
+						if = {
+							limit = {
+								ENG = { has_government = neutrality }
+							}
+							ENG = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								FRA = { has_government = neutrality }
+							}
+							FRA = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								SPR = { has_government = neutrality }
+							}
+							SPR = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								SPA = { has_government = neutrality }
+							}
+							SPA = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								HOL = { has_government = neutrality }
+							}
+							HOL = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								BEL = { has_government = neutrality }
+							}
+							BEL = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								LUX = { has_government = neutrality }
+							}
+							LUX = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								NOR = { has_government = neutrality }
+							}
+							NOR = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								SWE = { has_government = neutrality }
+							}
+							SWE = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								FIN = { has_government = neutrality }
+							}
+							FIN = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								DEN = { has_government = neutrality }
+							}
+							DEN = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								ITA = { has_government = neutrality }
+							}
+							ITA = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								YUG = { has_government = neutrality }
+							}
+							YUG = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								ALB = { has_government = neutrality }
+							}
+							ALB = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								BUL = { has_government = neutrality }
+							}
+							BUL = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								GRE = { has_government = neutrality }
+							}
+							GRE = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								POL = { 
+									has_government = neutrality
+									has_completed_focus = POL_assemble_the_regency_council
+								}
+							}
+							POL = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								HUN = { 
+									has_government = neutrality
+									has_completed_focus = HUN_invite_the_habsburg_prince
+								}
+							}
+							HUN = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								GER = { 
+									has_government = neutrality
+									has_completed_focus = GER_revive_the_kaiserreich
+								}
+							}
+							GER = { country_event = generic.2 }
+						}
+						if = {
+							limit = {
+								POR = { 
+									has_government = neutrality
+									has_completed_focus = POR_a_royal_wedding
+								}
+							}
+							POR = { country_event = generic.2 }
+						}
+                    }
                     set_country_flag = imperial_obligations_confirmed
                     if = {
                         limit = {
@@ -2658,7 +2955,16 @@ scripted_gui = {
 
             sov_national_obligations_imperial_obligations_first_option_button_click_enabled = {
                 THIS = {
-                    #TODO
+                    OR = {
+						has_tech = modern_blitzkrieg
+						has_tech = werwolf_guerillas
+						has_tech = air_land_battle
+						has_tech = shock_and_awe
+						has_tech = c3i_theory
+						has_tech = infiltration_in_depth
+						has_tech = continuous_offensive
+						has_tech = guerilla_warfare
+					}
                     NOT = {
                         has_country_flag = imperial_obligations_confirmed
                     }
