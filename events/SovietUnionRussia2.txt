@@ -35334,6 +35334,78 @@ country_event = {
 	}
 }
 
+#Imperial Council World Takeover Warning
+country_event = {
+	id = russia2_russia.677
+	title = russia2_russia.677.t
+	desc = russia2_russia.677.d
+	picture = GFX_report_event_ger_civil_war
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = imperial_council_war_delay
+			}
+			hidden_effect = {
+				country_event = { id = russia2_russia.678 days = 10 }
+			}
+		}
+	}
+	
+	option = {
+		name = russia2_russia.677.a
+		if = {
+			limit = {
+				NOT = { has_country_flag = imperial_council_war_delay }
+			}
+			hidden_effect = {
+				country_event = { id = russia2_russia.678 days = 10 }
+			}
+		}
+	}
+	
+	option = {
+		name = russia2_russia.677.b
+		trigger = {
+			NOT = { NOT = { has_country_flag = imperial_council_war_delay } }
+		}
+		hidden_effect = {
+			country_event = { id = russia2_russia.677 days = 720 }
+		}
+		set_country_flag = imperial_council_war_delay
+	}
+}
+
+#Imperial Council World Takeover
+country_event = {
+	id = russia2_russia.678
+	title = russia2_russia.677.t
+	desc = russia2_russia.678.d
+	picture = GFX_report_event_ger_civil_war
+	is_triggered_only = yes
+	
+	immediate = {
+		every_other_country = {
+			limit = {
+				NOT = {
+					OR = {
+						is_in_faction_with = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			SOV = {
+				declare_war_on = { target = PREV type = puppet_wargoal_focus }
+			}
+		}
+	}
+	
+	option = {
+		name = russia2_russia.678.a
+	}
+}
+
 #Russia asks for small scale intervention
 country_event = {
 	id = russia2_russia.700
