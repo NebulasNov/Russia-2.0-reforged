@@ -1106,4 +1106,8 @@ spriteTypes = {
 		name = "GFX_idea_SOV_golden_age_idea_pic"
 		texturefile = "gfx/interface/ideas/idea_SOV_golden_age_idea_pic.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SOV_will_of_the_tsar"
+		texturefile = "gfx/interface/ideas/idea_SOV_will_of_the_tsar.dds"
+	}
 }
