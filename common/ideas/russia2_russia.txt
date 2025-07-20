@@ -9984,6 +9984,42 @@ ideas = {
 				resistance_growth = -0.35
 			}
 		}
+		will_of_the_tsar = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			picture = SOV_will_of_the_tsar
+
+			cancel = {
+			}
+
+			modifier = {
+				political_power_factor = 0.5
+				political_power_gain = 1
+				command_power_gain_mult = 0.75
+				high_command_cost_factor = -1
+				air_chief_cost_factor = -1
+				army_chief_cost_factor = -1
+				navy_chief_cost_factor = -1
+				trade_laws_cost_factor = -1
+				economy_cost_factor = -1
+				mobilization_laws_cost_factor = -1
+				political_advisor_cost_factor = -1
+				party_popularity_stability_factor = 0.25
+				guarantee_cost = -1
+				guarantee_tension = -1
+				join_faction_tension = -1
+				justify_war_goal_time = -1
+				generate_wargoal_tension = -1
+				send_volunteers_tension = -1
+				puppet_cost_factor = -0.5
+				occupation_cost = -0.5
+				annex_cost_factor = -0.5
+			}
+		}
 
 	}
 
