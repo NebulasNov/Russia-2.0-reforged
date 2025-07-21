@@ -22060,7 +22060,7 @@ focus_tree = {
 		x = 88
 		y = 27
 		prerequisite = { focus = SOV_the_thoughts_of_many }
-		icon = GFX_goal_unknown_golden
+		icon = GFX_focus_SOV_russian_realm
 		cost = 6
 		ai_will_do = {
 			factor = 10
