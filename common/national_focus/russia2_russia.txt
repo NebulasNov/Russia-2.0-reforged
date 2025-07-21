@@ -7136,7 +7136,7 @@ focus_tree = {
 		x = 60
 		y = 8
 		prerequisite = { focus = SOV_flagship_russia focus = SOV_shore_bombardment focus = SOV_further_doctrine_improvement }
-		icon = GFX_goal_unknown_golden
+		icon = GFX_focus_SOV_grand_fleet
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -19776,7 +19776,7 @@ focus_tree = {
 		x = 52
 		y = 28
 		prerequisite = { focus = SOV_contact_german_exiles focus = SOV_contact_french_exiles focus = SOV_alliance_kaiser_empress }
-		icon = GFX_goal_unknown_golden
+		icon = GFX_focus_SOV_imperial_obligations
 		cost = 6
 		ai_will_do = {
 			factor = 10
