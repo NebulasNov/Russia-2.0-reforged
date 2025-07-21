@@ -60529,4 +60529,34 @@ SOV_interventions_for_democracy = {
 	}
 }
 
+SOV_expand_the_russian_realm = {
+	SOV_russian_blitz = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+				has_country_flag = russian_realm_blitxkrieg
+				has_war = yes
+				NOT = {
+					has_country_flag = russian_realm_blitxkrieg_coolddown
+				}
+		}
+		visible = {
+			has_country_flag = russian_realm_blitxkrieg
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			add_timed_idea = { idea = russian_blitz days = 30 }
+			set_country_flag = {
+				flag = russian_realm_blitxkrieg_coolddown
+				days = 120
+				}
+		}
+	}
+}
+
 
