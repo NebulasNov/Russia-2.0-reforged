@@ -10021,6 +10021,48 @@ ideas = {
 			}
 		}
 
+		russian_blitz_idea = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			picture = agressive_expansion
+
+			cancel = {
+			}
+			
+			modifier = {
+				army_speed_factor = 0.40
+				army_attack_factor = 0.30
+				land_night_attack = 0.50
+				army_org_factor = 0.20
+				org_loss_when_moving = -0.35
+				army_morale_factor = 0.40
+				breakthrough_factor = 0.30
+				supply_consumption_factor = -0.30
+				attrition = -0.50
+				land_reinforce_rate = 0.15
+				air_attack_factor = 0.30
+				air_defence_factor = 0.25
+				air_agility_factor = 0.35
+				maximum_speed = 0.25
+				air_range_factor = 0.20
+				air_weather_penalty	 = -0.35
+				air_night_penalty = -0.40
+				air_superiority_efficiency = 0.30
+				air_cas_efficiency = 0.50
+				air_intercept_efficiency = 0.15
+				air_superiority = 0.25
+				air_cas_present_factor = 0.25
+				ground_attack_factor = 0.20
+				air_bombing = 0.25
+				air_bombing_targetting = 0.30
+				naval_strike_attack_factor = 0.3
+			}
+		}
+
 	}
 
 	naval_manufacturer = {
