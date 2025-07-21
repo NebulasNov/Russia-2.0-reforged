@@ -1206,9 +1206,12 @@ spriteTypes = {
 		name = "GFX_focus_SOV_grand_fleet"
 		texturefile = "gfx/interface/goals/focus_SOV_grand_fleet.dds"
 	}
-	
 	spriteType = {
 		name = "GFX_focus_SOV_imperial_obligations"
 		texturefile = "gfx/interface/goals/focus_SOV_imperial_obligations.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_russian_realm"
+		texturefile = "gfx/interface/goals/focus_SOV_russian_realm.dds"
 	}
 }
