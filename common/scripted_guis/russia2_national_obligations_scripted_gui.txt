@@ -3189,7 +3189,30 @@ scripted_gui = {
         effects = {
             sov_national_obligations_russian_realm_confirm_button_click = {
                 THIS = {
-                    #TODO
+                     if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_russian_realm_selected_index = 1
+                            }
+                        }
+						set_country_flag = russian_realm_amry_power_double
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_russian_realm_selected_index = 2
+                            }
+                        }
+						set_country_flag = russian_realm_auto_coring
+                    }
+					else_if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_russian_realm_selected_index = 3
+                            }
+                        }
+                        set_country_flag = russian_realm_blitxkrieg
+                    }
                     set_country_flag = russian_realm_confirmed
                     if = {
                         limit = {
@@ -3290,6 +3313,14 @@ scripted_gui = {
                     NOT = {
                         has_country_flag = russian_realm_confirmed
                     }
+		if = {
+                        limit = {
+                            check_variable = {
+                                sov_national_obligations_russian_realm_selected_index = 1
+                            }
+                        }
+                        has_country_flag = unfailing_army_offense_flag
+                    }
                 }
             }
 
@@ -3301,7 +3332,7 @@ scripted_gui = {
 
             sov_national_obligations_russian_realm_first_option_button_click_enabled = {
                 THIS = {
-                    #TODO
+                    has_country_flag = unfailing_army_offense_flag
                     NOT = {
                         has_country_flag = russian_realm_confirmed
                     }
