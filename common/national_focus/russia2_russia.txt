@@ -24604,7 +24604,7 @@ focus_tree = {
 		x = 125
 		y = 10
 		prerequisite = { focus = SOV_we_are_stronger_together }
-		icon = GFX_Embrace_total_anarchy
+		icon = GFX_focus_SOV_future_of_the_league
 		cost = 5
 		ai_will_do = {
 			factor = 7
@@ -24629,7 +24629,7 @@ focus_tree = {
 		x = 131
 		y = 11
 		prerequisite = { focus = SOV_future_of_the_league }
-		icon = GFX_Embrace_total_anarchy
+		icon = GFX_goal_generic_major_alliance
 		cost = 6
 		ai_will_do = {
 			factor = 7
@@ -24973,7 +24973,7 @@ focus_tree = {
 		x = 125
 		y = 12
 		prerequisite = { focus = SOV_a_tight_grip }
-		icon = GFX_Embrace_total_anarchy
+		icon = GFX_goal_generic_dangerous_deal
 		cost = 5
 		ai_will_do = {
 			factor = 7
@@ -25016,7 +25016,7 @@ focus_tree = {
 		x = 125
 		y = 13
 		prerequisite = { focus = SOV_convince_disputants }
-		icon = GFX_Embrace_total_anarchy
+		icon = GFX_focus_ARG_no_gods_no_masters
 		cost = 5
 		ai_will_do = {
 			factor = 7
@@ -25083,7 +25083,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_future_of_the_league }
 		mutually_exclusive = { focus = SOV_reform_russia }
 		mutually_exclusive = { focus = SOV_a_tight_grip }
-		icon = GFX_Embrace_total_anarchy
+		icon = GFX_focus_SOV_semi_devolution
 		cost = 8
 		ai_will_do = {
 			factor = 7
@@ -25106,7 +25106,7 @@ focus_tree = {
 		x = 128
 		y = 12
 		prerequisite = { focus = SOV_semi_devolution }
-		icon = GFX_Embrace_total_anarchy
+		icon = GFX_focus_generic_military_academy
 		cost = 10
 		ai_will_do = {
 			factor = 7
@@ -25128,7 +25128,7 @@ focus_tree = {
 		x = 128
 		y = 13
 		prerequisite = { focus = SOV_choose_beneficiary }
-		icon = GFX_Embrace_total_anarchy
+		icon = GFX_focus_SOV_officialize_the_act
 		cost = 10
 		ai_will_do = {
 			factor = 7
@@ -25315,7 +25315,7 @@ focus_tree = {
 		x = 125
 		y = 14
 		prerequisite = { focus = SOV_reintegrate_russian_territories focus = SOV_implement_the_project focus = SOV_officialize_act }
-		icon = GFX_Embrace_total_anarchy
+		icon = GFX_focus_spr_masters_of_our_own_fate
 		cost = 5
 		ai_will_do = {
 			factor = 7
@@ -25337,7 +25337,7 @@ focus_tree = {
 		x = 125
 		y = 15
 		prerequisite = { focus = SOV_centralization_free_territory }
-		icon = GFX_Embrace_total_anarchy
+		icon = GFX_focus_spr_anarchism_knows_no_borders
 		cost = 5
 		ai_will_do = {
 			factor = 7
