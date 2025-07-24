@@ -1229,4 +1229,8 @@ spriteTypes = {
 		name = "GFX_focus_SOV_officialize_the_act"
 		texturefile = "gfx/interface/goals/focus_SOV_officialize_the_act.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_SOV_rebirth"
+		texturefile = "gfx/interface/goals/focus_SOV_rebirth.dds"
+	}
 }
