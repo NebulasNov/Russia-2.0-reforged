@@ -1214,4 +1214,19 @@ spriteTypes = {
 		name = "GFX_focus_SOV_russian_realm"
 		texturefile = "gfx/interface/goals/focus_SOV_russian_realm.dds"
 	}
+
+	spriteType = {
+		name = "GFX_focus_SOV_semi_devolution"
+		texturefile = "gfx/interface/goals/focus_SOV_semi_devolution.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SOV_future_of_the_league"
+		texturefile = "gfx/interface/goals/focus_SOV_future_of_the_league.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SOV_officialize_the_act"
+		texturefile = "gfx/interface/goals/focus_SOV_officialize_the_act.dds"
+	}
 }
