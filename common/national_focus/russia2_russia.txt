@@ -25360,7 +25360,7 @@ focus_tree = {
 		x = 118
 		y = 20
 		prerequisite = { focus = SOV_spread_revolution_everywhere focus = SOV_spread_anarchism_beyond_our_neighbors }
-		icon = GFX_goal_unknown_golden
+		icon = GFX_focus_SOV_rebirth
 		cost = 6
 		ai_will_do = {
 			factor = 10
