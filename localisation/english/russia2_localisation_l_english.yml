@@ -1249,7 +1249,7 @@
  will_receive_wargoal_agains_minor_neighbor_nation:0 "We will §GReceive§! a §YWar Goal§! against §YEvery Minor Nation§! neighboring §YUs§! or §YAny Member of the League§!."
  sov_finished_anarchy_reform_chaos:0 "Has §YFinished§! the §YReforms§!"
  SOV_rebirth:0 "§YRebirth§!"
- SOV_rebirth_desc:0 ""
+ SOV_rebirth_desc:0 "The world has fallen and we have risen from its ashes"
  SOV_rebirth_tt:0 "Unlocks National Obligation : §ORebirth§!"
 
  #Continents
@@ -13684,14 +13684,14 @@
  LOC_sov_national_obligations_russian_realm_third_option_trigger:0 ""
  LOC_sov_national_obligations_rebirth_confirm_button:0 "Confirm"
  LOC_sov_national_obligations_rebirth_first_option_text:0 "WIP"
- LOC_sov_national_obligations_rebirth_second_option_text:0 "WIP"
- LOC_sov_national_obligations_rebirth_third_option_text:0 "WIP"
+LOC_sov_national_obligations_rebirth_second_option_text:0 "§RWe will make the concept of nations go extinct.§! §YAs we take states all cores on that state will be removed and we will instead core that state.§!"
+ LOC_sov_national_obligations_rebirth_third_option_text:0 "§YThe world will begin again. Every nation will be released with an anarchist government"
  LOC_sov_national_obligations_rebirth_first_option_quote:0 "§W\"First quote here.\"§!\n§YQuote Author§!"
- LOC_sov_national_obligations_rebirth_second_option_quote:0 "§W\"Second quote here.\"§!\n§YQuote Author§!"
- LOC_sov_national_obligations_rebirth_third_option_quote:0 "§W\"Third quote here.\"§!\n§YQuote Author§!"
+ LOC_sov_national_obligations_rebirth_second_option_quote:0 "§W\"Extinction is the rule. Survival is the exception.\"§!\n§YCarl Sagan§!"
+ LOC_sov_national_obligations_rebirth_third_option_quote:0 "§W\"Why be a star when you can make a constellation?\"§!\n§YMariam Kaba§!"
  LOC_sov_national_obligations_rebirth_first_option_trigger:0 "[THIS.GetTriggerStatusFirstOptionRebirth] WIP"
- LOC_sov_national_obligations_rebirth_second_option_trigger:0 "[THIS.GetTriggerStatusSecondOptionRebirth] WIP"
- LOC_sov_national_obligations_rebirth_third_option_trigger:0 "[THIS.GetTriggerStatusThirdOptionRebirth] WIP"
+ LOC_sov_national_obligations_rebirth_second_option_trigger:0 ""
+ LOC_sov_national_obligations_rebirth_third_option_trigger:0 "[THIS.GetTriggerStatusThirdOptionRebirth] No Non-Anarchist countries can exist"
 
  #Anna Anderson
  LOC_sov_anna_anderson_legitimacy:0 "[?anna_anderson_legitimacy|%C1]"
