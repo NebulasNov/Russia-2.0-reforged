@@ -749,6 +749,32 @@ on_daily_SOV = {
 						add_state_core = FROM.FROM
 					}
 			}
+			if = {
+				limit = {
+					ROOT = {
+						has_country_flag = rebirth_extinction
+					}
+				}
+				every_possible_country = {
+					limit = {
+						any_core_state = {
+							state = FROM.FROM
+						}
+					}
+						remove_state_core = FROM.FROM
+				}
+			}
+			
+			if = {
+				limit = {
+					ROOT = {
+						has_country_flag = rebirth_extinction
+					}
+				}
+				SOV = {
+						add_state_core = FROM.FROM
+					}
+			}
 		}
 	}
 
