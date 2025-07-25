@@ -370,8 +370,40 @@ on_actions = {
 						}
 					}
 			}
+	if = {
+				limit = {
+					SOV = { 
+						AND = {
+							has_country_flag = sov_rebirth_option_1 
+							has_war = yes
+						}
+					}
+				}
+				SOV = {
+					random_list = {
+						50 = {
+							219 = {
+								create_unit = {
+									division = "name = \"Free Army\" division_template = \"Free Army\" start_experience_factor = 0.5" 
+									owner = SOV
+								}
+								create_unit = {
+									division = "name = \"Free Army\" division_template = \"Free Army\" start_experience_factor = 0.5" 
+									owner = SOV
+								}
+								create_unit = {
+									division = "name = \"Free Army\" division_template = \"Free Army\" start_experience_factor = 0.5" 
+									owner = SOV
+								}
+							}
+						}
+						50 = { }
+					}
+				}
+			}
 
         }
+
     }
 
 on_daily_SOV = {
