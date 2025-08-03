@@ -2093,7 +2093,7 @@ scripted_gui = {
                             }
                         }
 						set_global_flag = continental_system_creating
-						add_ideas = russian_democracy
+						add_ideas = SOV_system_enforcer
 						set_rule = {
 							can_declare_war_on_same_ideology = yes
 							can_only_justify_war_on_threat_country = no
