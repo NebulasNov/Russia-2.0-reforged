@@ -2717,7 +2717,7 @@ scripted_gui = {
 						#As long as there is imperialism in the world, a permanent peace is impossible - Hassan Nasrallah
 						SOV = {
 							create_faction = imperial_council
-							country_event = { id = russia2_russia.677 days = 10 }
+							country_event = { id = russia2_russia.677 days = 730 }
 						}
 						if = {
 							limit = {
