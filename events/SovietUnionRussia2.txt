@@ -35559,7 +35559,7 @@ country_event = {
 			NOT = { has_country_flag = imperial_council_war_delay } 
 		}
 		hidden_effect = {
-			country_event = { id = russia2_russia.677 days = 10 }
+			country_event = { id = russia2_russia.677 days = 730 }
 		}
 		set_country_flag = imperial_council_war_delay
 	}
