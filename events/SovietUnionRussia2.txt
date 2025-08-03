@@ -35124,8 +35124,10 @@ country_event = {
 			factor = 100
 		}
 		annex_country = { target = FROM transfer_troops = yes }
+		hidden_effect = {
 		every_owned_state = {
-			SOV = { add_state_core PREV }
+			SOV = { add_state_core = PREV }
+		}
 		}
 		add_to_variable = { 
 			var = number_of_proletarian_members
