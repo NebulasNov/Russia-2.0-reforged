@@ -3587,6 +3587,7 @@ scripted_gui = {
                             }
                         }
 						all_country = {
+							exists = yes
 							has_government = anarchy
 						}
                         #any_other_country = {
@@ -3643,6 +3644,7 @@ scripted_gui = {
             sov_national_obligations_rebirth_third_option_button_click_enabled = {
                 THIS = {
 					all_country = {
+						exists = yes
 						has_government = anarchy
 					}
                     #any_other_country = {
