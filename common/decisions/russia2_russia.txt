@@ -60525,7 +60525,7 @@ SOV_interventions_for_democracy = {
 				set_country_flag = treaty_moscow_full_invasion
 				save_global_event_target_as = SOV_target_intervention_full
 			}
-			every_other_country = {
+			every_country = {
 				limit = {
 					has_government = democratic
 					has_country_flag = signitor_treaty_moscow
