@@ -53564,7 +53564,7 @@ SOV_negotiation_disputants_category_decisions = {
 
 		icon = GFX_decision_eng_propaganda_campaigns
 
-		days_remove = 1
+		days_remove = 20
 
 		on_map_mode = map_and_decisions_view
 
@@ -53670,7 +53670,7 @@ SOV_negotiation_disputants_category_decisions = {
 
 		icon = GFX_decision_onmap_recruit_operative
 
-		days_remove = 1
+		days_remove = 15
 
 		on_map_mode = map_and_decisions_view
 
