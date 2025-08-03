@@ -3452,10 +3452,15 @@ scripted_gui = {
                                 sov_national_obligations_rebirth_selected_index = 2
                             }
                         }
-						set_country_flag = rebirth_extinction
-						every_controlled_state = {
-							ROOT = { add_state_core = PREV }
-						}
+				set_country_flag = rebirth_extinction
+				every_controlled_state = {
+					every_possible_country = {
+						remove_state_core = PREV
+					}
+				}
+				every_controlled_state = {
+					ROOT = { add_state_core = PREV }
+				}
 						
                     }
 					else_if = {
