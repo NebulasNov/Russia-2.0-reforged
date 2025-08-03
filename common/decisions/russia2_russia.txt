@@ -60509,7 +60509,10 @@ SOV_interventions_for_democracy = {
 				has_war = yes
 				is_subject = no
 				NOT = {
-					has_country_flag = treaty_moscow_full_invasion
+					OR = {
+						has_country_flag = treaty_moscow_full_invasion
+						has_country_flag = signitor_treaty_moscow
+					}
 				}
 			}
 		}
