@@ -345,28 +345,28 @@ on_actions = {
 					has_country_flag = golden_age_random_spirits
 				}
 				random_list = {
-						4 = {
+						3 = {
 							country_event = { id = russia2_russia.705 }
 						}
-						4 = {
+						3 = {
 							country_event = { id = russia2_russia.706 }
 						}
-						4 = {
+						3 = {
 							country_event = { id = russia2_russia.707 }
 						}
-						4 = {
+						3 = {
 							country_event = { id = russia2_russia.708 }
 						}
-						4 = {
+						3 = {
 							country_event = { id = russia2_russia.709 }
 						}
-						4 = {
+						3 = {
 							country_event = { id = russia2_russia.710 }
 						}
-						4 = {
+						3 = {
 							country_event = { id = russia2_russia.711 }
 						}
-						72 = {	
+						79 = {	
 						}
 					}
 			}
