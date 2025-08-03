@@ -32978,9 +32978,11 @@ country_event = {
 					has_country_flag = militaristic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.646 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.646 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -32995,9 +32997,11 @@ country_event = {
 					has_country_flag = economic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.645 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.645 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33012,9 +33016,11 @@ country_event = {
 					has_country_flag = social_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.644 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.644 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33029,9 +33035,11 @@ country_event = {
 					has_country_flag = peaceful_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.643 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.643 days = 4 }
+				}
+			}	
 		}
 		else = {
 			custom_effect_tooltip = debug_tooltip_problem_not_working_as_intended
@@ -33056,9 +33064,11 @@ country_event = {
 					has_country_flag = militaristic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.644 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.644 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33073,9 +33083,11 @@ country_event = {
 					has_country_flag = economic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.643 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.643 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33090,9 +33102,11 @@ country_event = {
 					has_country_flag = social_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.646 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.646 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33107,9 +33121,11 @@ country_event = {
 					has_country_flag = peaceful_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.645 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.645 days = 4 }
+				}
+			}	
 		}
 		else = {
 			custom_effect_tooltip = debug_tooltip_problem_not_working_as_intended
@@ -33134,9 +33150,11 @@ country_event = {
 					has_country_flag = militaristic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.643 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.643 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33151,9 +33169,11 @@ country_event = {
 					has_country_flag = economic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.644 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.644 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33168,9 +33188,11 @@ country_event = {
 					has_country_flag = social_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.645 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.645 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33185,9 +33207,11 @@ country_event = {
 					has_country_flag = peaceful_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.646 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.646 days = 4 }
+				}
+			}	
 		}
 		else = {
 			custom_effect_tooltip = debug_tooltip_problem_not_working_as_intended
@@ -33212,9 +33236,11 @@ country_event = {
 					has_country_flag = militaristic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.645 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.645 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33229,9 +33255,11 @@ country_event = {
 					has_country_flag = economic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.646 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.646 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33246,9 +33274,11 @@ country_event = {
 					has_country_flag = social_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.643 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.643 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33263,9 +33293,11 @@ country_event = {
 					has_country_flag = peaceful_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.644 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.644 days = 4 }
+				}
+			}	
 		}
 		else = {
 			custom_effect_tooltip = debug_tooltip_problem_not_working_as_intended
@@ -33300,9 +33332,11 @@ country_event = {
 					has_country_flag = militaristic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.645 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.645 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33317,9 +33351,11 @@ country_event = {
 					has_country_flag = economic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.646 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.646 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33334,9 +33370,11 @@ country_event = {
 					has_country_flag = social_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.643 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.643 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33351,9 +33389,11 @@ country_event = {
 					has_country_flag = peaceful_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.644 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.644 days = 4 }
+				}
+			}	
 		}
 		else = {
 			custom_effect_tooltip = debug_tooltip_problem_not_working_as_intended
@@ -33378,9 +33418,11 @@ country_event = {
 					has_country_flag = militaristic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.646 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.646 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33395,9 +33437,11 @@ country_event = {
 					has_country_flag = economic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.645 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.645 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33412,9 +33456,11 @@ country_event = {
 					has_country_flag = social_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.644 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.644 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33429,9 +33475,11 @@ country_event = {
 					has_country_flag = peaceful_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.643 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.643 days = 4 }
+				}
+			}	
 		}
 		else = {
 			custom_effect_tooltip = debug_tooltip_problem_not_working_as_intended
@@ -33456,9 +33504,11 @@ country_event = {
 					has_country_flag = militaristic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.644 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.644 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33473,9 +33523,11 @@ country_event = {
 					has_country_flag = economic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.643 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.643 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33490,9 +33542,11 @@ country_event = {
 					has_country_flag = social_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.646 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.646 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33507,9 +33561,11 @@ country_event = {
 					has_country_flag = peaceful_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.645 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.645 days = 4 }
+				}
+			}	
 		}
 		else = {
 			custom_effect_tooltip = debug_tooltip_problem_not_working_as_intended
@@ -33534,9 +33590,11 @@ country_event = {
 					has_country_flag = militaristic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.643 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.643 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33551,9 +33609,11 @@ country_event = {
 					has_country_flag = economic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.644 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.644 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33568,9 +33628,11 @@ country_event = {
 					has_country_flag = social_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.645 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.645 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33585,9 +33647,11 @@ country_event = {
 					has_country_flag = peaceful_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.646 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.646 days = 4 }
+				}
+			}	
 		}
 		else = {
 			custom_effect_tooltip = debug_tooltip_problem_not_working_as_intended
@@ -33622,9 +33686,11 @@ country_event = {
 				has_country_flag = militaristic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.645 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.645 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33639,9 +33705,11 @@ country_event = {
 				has_country_flag = economic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.646 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.646 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33656,9 +33724,11 @@ country_event = {
 				has_country_flag = social_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.643 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.643 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33673,9 +33743,11 @@ country_event = {
 				has_country_flag = peaceful_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.644 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.644 days = 4 }
+				}
+			}	
 		}
 		else = {
 			custom_effect_tooltip = debug_tooltip_problem_not_working_as_intended
@@ -33700,9 +33772,11 @@ country_event = {
 				has_country_flag = militaristic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.643 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.643 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33717,9 +33791,11 @@ country_event = {
 				has_country_flag = economic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.644 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.644 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33734,9 +33810,11 @@ country_event = {
 				has_country_flag = social_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.645 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.645 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33751,9 +33829,11 @@ country_event = {
 				has_country_flag = peaceful_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.646 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.646 days = 4 }
+				}
+			}	
 		}
 		else = {
 			custom_effect_tooltip = debug_tooltip_problem_not_working_as_intended
@@ -33778,9 +33858,11 @@ country_event = {
 				has_country_flag = militaristic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.646 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.646 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33795,9 +33877,11 @@ country_event = {
 				has_country_flag = economic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.645 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.645 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33812,9 +33896,11 @@ country_event = {
 				has_country_flag = social_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.644 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.644 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33829,9 +33915,11 @@ country_event = {
 				has_country_flag = peaceful_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.643 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.643 days = 4 }
+				}
+			}	
 		}
 		else = {
 			custom_effect_tooltip = debug_tooltip_problem_not_working_as_intended
@@ -33856,9 +33944,11 @@ country_event = {
 				has_country_flag = militaristic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.644 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.644 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33873,9 +33963,11 @@ country_event = {
 				has_country_flag = economic_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.643 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.643 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33890,9 +33982,11 @@ country_event = {
 				has_country_flag = social_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.646 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.646 days = 4 }
+				}
+			}	
 		}
 		else_if = {
 			limit = {
@@ -33907,9 +34001,11 @@ country_event = {
 				has_country_flag = peaceful_personality_flag
 				}
 			}
-			SOV = {
-				country_event = { id = russia2_russia.645 days = 4 }
-			}
+			hidden_effect = {
+				SOV = {
+					country_event = { id = russia2_russia.645 days = 4 }
+				}
+			}	
 		}
 		else = {
 			custom_effect_tooltip = debug_tooltip_problem_not_working_as_intended
