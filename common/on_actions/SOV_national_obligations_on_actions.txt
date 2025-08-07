@@ -204,7 +204,7 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						check_variable = { sov_amount_of_battleships < num_ships_with_type@battleship }
+						check_variable = { sov_amount_of_battleship < num_ships_with_type@battleship }
 					}
 					SOV = { load_oob = "SOV_national_obligation_grand_fleet_bb" }
 					set_variable = {
